@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">🚴 Bike Sales</h5>
                   <p className="card-text">Choose from top brands and custom options to find your perfect ride.</p>
-                  <a href="/browse" className="btn btn-primary btn-sm mt-3">Browse bikes</a>
+                  <a href="/bikeshop/browse" className="btn btn-primary btn-sm mt-3">Browse bikes</a>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">🔧 Repairs</h5>
                   <p className="card-text">Flat tires to full overhauls—our certified mechanics have you covered.</p>
-                  <a href="#contact" className="btn btn-primary btn-sm mt-3">Repair your bike</a>
+                  <a href="/bikeshop/repair" className="btn btn-primary btn-sm mt-3">Repair your bike</a>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Home() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold">🕑 Appointments</h5>
                   <p className="card-text">Check what appointments you have coming up.</p>
-                  <a href="/appointments" className="btn btn-primary btn-sm mt-3">My appointments</a>
+                  <a href="/bikeshop/appointments" className="btn btn-primary btn-sm mt-3">My appointments</a>
                 </div>
               </div>
             </div>

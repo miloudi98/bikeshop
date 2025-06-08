@@ -25,7 +25,7 @@ export default function Login() {
 
     if (result) {
       setUser(result);
-      window.location.href = "/";
+      window.location.href = "/bikeshop";
     } else {
       alert("Invalid username or password");
     }
@@ -56,7 +56,7 @@ export default function Login() {
           <input type="password" name="password" className="form-control" value={formState.password} onChange={formStateChangeHandler} id="floatingPassword" placeholder="" required />
         </div>
 
-        <p className="text-muted mb-4">Don't have an account? <a href="/signup" className="text-blue">Sign up</a></p>
+        <p className="text-muted mb-4">Don't have an account? <a href="/bikeshop/signup" className="text-blue">Sign up</a></p>
 
         <button type="submit" className="btn btn-dark">Login</button>
       </form>

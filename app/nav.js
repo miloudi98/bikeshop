@@ -13,10 +13,10 @@ const UserInfo = () => {
     return (
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link" href="/login">Log in</a>
+          <a className="nav-link" href="/bikeshop/login">Log in</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/signup">Sign up</a>
+          <a className="nav-link" href="/bikeshop/signup">Sign up</a>
         </li>
       </ul>
     );
@@ -28,7 +28,7 @@ const UserInfo = () => {
         <span className="avatar nav-link"><i className="bi bi-person"> {user.username} </i></span>
       </li>
       <li className="nav-item">
-        <a href="/appointments" className="nav-link">
+        <a href="/bikeshop/appointments" className="nav-link">
           Appointments
         </a>
       </li>
@@ -48,19 +48,19 @@ export default function NavBar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <a className="navbar-brand" href="/">
-          <img className="avatar" src="/favicon.ico" />
+        <a className="navbar-brand" href="/bikeshop/">
+          <img className="avatar" src="/bikeshop/favicon.ico" />
         </a>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="/browse">Browse bikes</a>
+              <a className="nav-link" href="/bikeshop/browse">Browse bikes</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/repair">Repair your bike</a>
+              <a className="nav-link" href="/bikeshop/repair">Repair your bike</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/appointments">My appointments</a>
+              <a className="nav-link" href="/bikeshop/appointments">My appointments</a>
             </li>
           </ul>
         </div>

@@ -12,14 +12,14 @@ import { useUserContext } from "../auth/users.js";
 const BIKE_DATA = [
         { 
           id: 1,
-          image: "/bike-card-0.png",
+          image: "/bikeshop/bike-card-0.png",
           title: "Vintage Red Schwinn Bicycle",
           description: "This vintage red Schwinn bicycle features a classic design with a wicker basket on the handlebars, a slightly worn leather seat, and gleaming chrome accents. It is designed for leisure rides and commuting, offering an upright seat for better posture and smooth tires."
         }, 
 
         { 
           id: 2,
-          image: "/bike-card-1.png",
+          image: "/bikeshop/bike-card-1.png",
           title: "Sleek Black Mountain Bike",
           description: "This sleek, black mountain bike features bright red accents, knobby tires ready for adventure, gleaming chrome handlebars, and shiny gears ready for action. It is designed for off-road riding, offering better control and comfort on bumpier terrains."
         },
@@ -27,14 +27,14 @@ const BIKE_DATA = [
 
         { 
           id: 3,
-          image: "/bike-card-2.png",
+          image: "/bikeshop/bike-card-2.png",
           title: "Sleek Black Mountain Bike",
           description: "This sleek, black mountain bike features a durable aluminum frame, knobby tires, and disc brakes, ready for a challenging mountain trail. It is designed for off-road riding, offering better control and comfort on bumpier terrains."
         },
 
         { 
           id: 4,
-          image: "/bike-card-3.png",
+          image: "/bikeshop/bike-card-3.png",
           title: "Vintage Red Bicycle",
           description: "This vintage, bright red bicycle features a wicker basket on the handlebars and intricate detailing on its frame and tires. It is designed for leisure rides and commuting, offering an upright seat for better posture and smooth tires."
         },
@@ -42,7 +42,7 @@ const BIKE_DATA = [
 
         { 
           id: 5,
-          image: "/bike-card-4.png",
+          image: "/bikeshop/bike-card-4.png",
           title: "Classic Vintage-Style Bicycle",
           description: "This classic, vintage-style bicycle is a bright red color with intricate details of chrome and white accents. It is designed for leisure rides and commuting, offering an upright seat for better posture and smooth tires."
         },
@@ -50,35 +50,35 @@ const BIKE_DATA = [
 
         { 
           id: 6,
-          image: "/bike-card-5.png",
+          image: "/bikeshop/bike-card-5.png",
           title: "Vintage Bicycle",
           description: "This vintage bicycle features a dark green frame with tan leather handlebars and saddle. It has a wicker basket on the handlebars and a bell attached to the frame, evoking a sense of nostalgia and old-world craftsmanship."
         }, 
 
         { 
           id: 7,
-          image: "/bike-card-6.png",
+          image: "/bikeshop/bike-card-6.png",
           title: "Vintage Powder-Blue Bicycle",
           description: "This vintage, powder-blue bicycle features a wicker basket on the handlebars and is parked on a cobblestone street. The sunlight casts a warm glow on the scene, illuminating the bicycle's chrome details and the vibrant flowers spilling from the basket."
         }, 
 
         {
           id: 8,
-          image: "/bike-card-7.png",
+          image: "/bikeshop/bike-card-7.png",
           title: "Classic Vintage Bicycle",
           description: "This classic, vintage bicycle features a faded, cream-colored paint job and stands against a brick wall, bathed in the warm light of a summer sunset. It includes a wicker basket attached to the handlebars, a comfortable brown leather seat, and old-fashioned mudguards."
         }, 
 
         {
           id: 9,
-          image: "/bike-card-8.png",
+          image: "/bikeshop/bike-card-8.png",
           title: "Sleek Modern Road Bike",
           description: "This sleek, modern road bike features a glossy black frame and bright red accents. It is designed for speed and efficiency on paved surfaces, offering a lightweight frame and aerodynamic riding position."
         },
     
         {
           id: 10,
-          image: "/bike-card-9.png",
+          image: "/bikeshop/bike-card-9.png",
           title: "Classic Blue Bicycle",
           description: "This classic, bright blue bicycle is leaning against a brick wall in a cozy, sun-drenched European alleyway. It features a wicker basket on the handlebars with colorful flowers"
         } 
@@ -127,7 +127,7 @@ const BuyBikeForm = () => {
           </div>
         </div>
 
-        <a href="/appointments" className="btn btn-secondary mt-4">My appointments</a>
+        <a href="/bikeshop/appointments" className="btn btn-secondary mt-4">My appointments</a>
       </div> 
     );
   }

@@ -30,7 +30,7 @@ export default function Signup() {
       };
       setUserDB([...userDB, structuredClone(newUser)]);
       setUser(structuredClone(newUser));
-      window.location.href = "/";
+      window.location.href = "/bikeshop";
     }
   };
   
@@ -61,7 +61,7 @@ export default function Signup() {
           <input type="password" name="password" className="form-control" value={formState.password} onChange={formStateChangeHandler} id="floatingPassword" required />
         </div>
 
-        <p className="text-muted mb-4">Already have an account? <a href="/login" className="text-blue">Log in</a></p>
+        <p className="text-muted mb-4">Already have an account? <a href="/bikeshop/login" className="text-blue">Log in</a></p>
 
         <button type="submit" className="btn btn-dark">Register</button>
       </form>

@@ -70,7 +70,7 @@ const BrokenBikeForm = () => {
           </div>
         </div>
 
-        <a href="/appointments" className="btn btn-secondary mt-4">My appointments</a>
+        <a href="/bikeshop/appointments" className="btn btn-secondary mt-4">My appointments</a>
       </div> 
     );
   }
