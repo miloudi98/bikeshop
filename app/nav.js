@@ -60,7 +60,7 @@ export default function NavBar() {
               <a className="nav-link" href="/repair">Repair your bike</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/appointments">Talk to an expert</a>
+              <a className="nav-link" href="/appointments">My appointments</a>
             </li>
           </ul>
         </div>

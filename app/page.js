@@ -38,9 +38,9 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <div className="card h-100">
                 <div className="card-body">
-                  <h5 className="card-title fw-bold">🧢 Consulting</h5>
-                  <p className="card-text">Not sure what bike suits your needs? Talk to one of our staff members now.</p>
-                  <a href="#contact" className="btn btn-primary btn-sm mt-3">Talk to an expert</a>
+                  <h5 className="card-title fw-bold">🕑 Appointments</h5>
+                  <p className="card-text">Check what appointments you have coming up.</p>
+                  <a href="/appointments" className="btn btn-primary btn-sm mt-3">My appointments</a>
                 </div>
               </div>
             </div>

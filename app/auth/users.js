@@ -8,10 +8,12 @@ const UserContext = createContext();
 export function UserProvider({ children }) {
   const [user, setUser] = useState(null);
   const [userDB, setUserDB] = useState([]);
+  const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
     const usr = localStorage.getItem("user");
     const usrDB = localStorage.getItem("userdb");
+    const apps = localStorage.getItem("apps");
 
     if (usr) {
       setUser(JSON.parse(usr));
@@ -19,6 +21,10 @@ export function UserProvider({ children }) {
 
     if (usrDB) {
       setUserDB(JSON.parse(usrDB));
+    }
+
+    if (apps) {
+      setAppointments(JSON.parse(apps));
     }
   }, []);
 
@@ -34,10 +40,16 @@ export function UserProvider({ children }) {
     } else {
       localStorage.removeItem("userdb");
     }
-  }, [user, userDB]);
+
+    if (appointments) {
+      localStorage.setItem("apps", JSON.stringify(appointments));
+    } else {
+      localStorage.removeItem("apps");
+    }
+  }, [user, userDB, appointments]);
 
   return (
-    <UserContext.Provider value={{ user, setUser, userDB, setUserDB }}>
+    <UserContext.Provider value={{ user, setUser, userDB, setUserDB, appointments, setAppointments }}>
       {children}
     </UserContext.Provider>
   );

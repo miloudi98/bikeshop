@@ -7,6 +7,8 @@ import NavBar from "../nav.js";
 
 import { useState, useEffect } from "react";
 
+import { useUserContext } from "../auth/users.js";
+
 const BIKE_DATA = [
         { 
           id: 1,
@@ -83,6 +85,8 @@ const BIKE_DATA = [
 ];
 
 const BuyBikeForm = () => {
+  const { appointments, setAppointments } = useUserContext();
+
   const [formState, setFormState] = useState({
     email: "",
     phone_number: "",
@@ -90,8 +94,13 @@ const BuyBikeForm = () => {
     appointment_date: "",
   });
 
+  const [success, setSuccess] = useState(false);
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    setSuccess(true);
+    setAppointments([...appointments, { email: formState.email, date: formState.appointment_date, reason: "Bike purchasing advice" }]);
+    console.log(appointments);
   };
 
   const formStateChangeHandler = (e) => {
@@ -102,6 +111,26 @@ const BuyBikeForm = () => {
       [name]: value,
     }));
   };
+
+  if (success) {
+    return (
+     <div className="container mt-5">
+        <div className="card text-white bg-success shadow rounded-3">
+          <div className="card-body">
+            <h4 className="card-title">Appointment Booked!</h4>
+            <p className="card-text">
+              Your appointment has been successfully scheduled.
+            </p>
+            <hr className="bg-white" />
+            <p className="mb-0 fw-bold">Date:</p>
+            <p>{formState.appointment_date}</p>
+          </div>
+        </div>
+
+        <a href="/appointments" className="btn btn-secondary mt-4">My appointments</a>
+      </div> 
+    );
+  }
 
   return (
     <form className="container p-4 rounded" onSubmit={onSubmitHandler}>
@@ -135,6 +164,7 @@ const BuyBikeForm = () => {
 export default function BrowseBikes() {
   const [bikes, setBikes] = useState([]);
   const [showPurchaseForm, setShowPurchaseForm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
     setBikes(BIKE_DATA);
@@ -202,7 +232,6 @@ export default function BrowseBikes() {
             )
           }
         </div>
-
       </div>
     </>
   );
