@@ -9,6 +9,7 @@ export default function Home() {
         <div className="container">
           <h1 className="display-4 fw-bold">Ride Better with Bikeshop</h1>
           <p className="lead">We sell, repair, and upgrade bicycles of all kinds. Let’s get you rolling!</p>
+          <p><i class="bi bi-geo-alt"></i> 64 Elgin street, Gatineau, J9X 3X4, QC, Canada</p>
         </div>
       </section>
 
@@ -53,6 +54,7 @@ export default function Home() {
         <div className="container text-center">
           <h2 className="fw-bold">Get In Touch</h2>
           <p>Have questions or need service? Call us at <strong>(343) 988-0000</strong> or visit us today!</p>
+          <p><i class="bi bi-geo-alt"></i> 64 Elgin street, Gatineau, J9X 3X4, QC, Canada</p>
           <a href="mailto:goule071@uottawa.ca" className="btn btn-outline-light mt-3">Email Us</a>
         </div>
       </section>
